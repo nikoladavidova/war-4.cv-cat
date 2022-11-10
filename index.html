@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://unpkg.com/react@18.1.0/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18.1.0/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+
+  <script type="text/jsx">
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    function Cat() {
+      return <div>
+        
+        <img src="https://placekitten.com/g/200/300" alt="Kočička"/>
+        <h1>This is a header</h1>
+        <p>text</p>
+<button>Button</button>
+
+      </div>
+    }
+
+    function Divy() {
+      return (
+              <>
+                <section>
+                  <Cat/>
+                  <Cat/>
+                  <Cat/>
+                </section>;</>
+      )
+    }
+
+    root.render(<Divy/>)
+
+
+  </script>
+
+</head>
+<body>
+<div id="root"></div>
+
+</body>
+</html>
+
